@@ -1,0 +1,1 @@
+print("have you ever wondered if any two things could be connected")
