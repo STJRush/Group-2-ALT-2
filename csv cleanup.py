@@ -1,8 +1,8 @@
 import csv
 import re
-
+import statistics
 def clean_stuff(valu):
-    valu=re.sub('[.!@#$&*^<]','', valu)
+    valu=re.sub('[!@#$&*^<]','', valu)
    
     
     return valu
@@ -11,6 +11,7 @@ f = open("ALT 2 project.csv", newline = '')
 reader = csv.reader(f)
 
 #header = next(reader)
+
 
 dataListed= [row for row in reader]
 
@@ -40,3 +41,6 @@ for i in range(row_count):
 
 print(xValuesList)
 print(yValuesList)
+
+
+
